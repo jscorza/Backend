@@ -76,3 +76,4 @@ pmanager.addProduct( new Product("producto prueba ","Este es un producto prueba"
 console.log(pmanager.getProducts())
 pmanager.addProduct( new Product("producto prueba","Este es un producto prueba",200,"sin","abc123",25))
 console.log(pmanager.getProductById(1))
+console.log()
