@@ -1,1 +1,110 @@
-[{"title":"primero","description":"Este es un producto prueba","price":200,"thumbnail":"Sin imagen","code":"a","stock":25,"id":1},{"title":"segundooo","description":"seguu","price":200,"thumbnail":"Sin imagen","code":"b","stock":290905,"id":2},{"title":"terceroUpdated","description":"kn;ldsndsncdsk;cn","price":111200,"thumbnail":"Sin imagen","code":"c","stock":2235,"id":3}]
+[
+    {
+        "title": "primero",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "a",
+        "stock": 25,
+        "id": 1
+    },
+    {
+        "title": "segundooo",
+        "description": "seguu",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "b",
+        "stock": 290905,
+        "id": 2
+    },
+    {
+        "title": "terceroUpdated",
+        "description": "kn;ldsndsncdsk;cn",
+        "price": 111200,
+        "thumbnail": "Sin imagen",
+        "code": "c",
+        "stock": 2235,
+        "id": 3
+    },
+    {
+        "title": "cuarto",
+        "description": "Este es otro producto de prueba",
+        "price": 150,
+        "thumbnail": "Sin imagen",
+        "code": "d",
+        "stock": 50,
+        "id": 4
+    },
+    {
+        "title": "quinto",
+        "description": "Otro producto más",
+        "price": 300,
+        "thumbnail": "Sin imagen",
+        "code": "e",
+        "stock": 100,
+        "id": 5
+    },
+    {
+        "title": "sexto",
+        "description": "Este producto tiene una descripción",
+        "price": 250,
+        "thumbnail": "Sin imagen",
+        "code": "f",
+        "stock": 75,
+        "id": 6
+    },
+    {
+        "title": "séptimo",
+        "description": "Un producto más",
+        "price": 180,
+        "thumbnail": "Sin imagen",
+        "code": "g",
+        "stock": 200,
+        "id": 7
+    },
+    {
+        "title": "octavo",
+        "description": "Otro producto de prueba",
+        "price": 170,
+        "thumbnail": "Sin imagen",
+        "code": "h",
+        "stock": 30,
+        "id": 8
+    },
+    {
+        "title": "noveno",
+        "description": "Producto de prueba",
+        "price": 100,
+        "thumbnail": "Sin imagen",
+        "code": "i",
+        "stock": 150,
+        "id": 9
+    },
+    {
+        "title": "décimo",
+        "description": "Un producto más",
+        "price": 220,
+        "thumbnail": "Sin imagen",
+        "code": "j",
+        "stock": 90,
+        "id": 10
+    },
+    {
+        "title": "undécimo",
+        "description": "Otro producto adicional",
+        "price": 280,
+        "thumbnail": "Sin imagen",
+        "code": "k",
+        "stock": 120,
+        "id": 11
+    },
+    {
+        "title": "duodécimo",
+        "description": "Producto número doce",
+        "price": 190,
+        "thumbnail": "Sin imagen",
+        "code": "l",
+        "stock": 60,
+        "id": 12
+    }
+]
