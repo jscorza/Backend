@@ -5,12 +5,15 @@ const readFile = promisify(ff.readFile);
 const writeFile = promisify(ff.writeFile);
 
 
-const path = "./files/productos.txt"
+
 export default class ProductsManager {
-    
+    constructor(path){
+        
+        this.path=path
+    }
     getProducts = async () => {
-            if (fs.existsSync(path)) {
-                const data = await fs.promises.readFile(path, 'utf-8');
+            if (fs.existsSync(this.path)) {
+                const data = await fs.promises.readFile(this.path, 'utf-8');
                 const products = JSON.parse(data);
                 return products;
             }
@@ -40,7 +43,7 @@ export default class ProductsManager {
             product.id = prod[prod.length-1].id+1;
         }
         prod.push(product);
-        await fs.promises.writeFile(path,JSON.stringify(prod,null,'\t'));
+        await fs.promises.writeFile(this.path,JSON.stringify(prod,null,'\t'));
         }  
     }
 
@@ -61,8 +64,8 @@ export default class ProductsManager {
     async actualizarProducto(id, atributo, nuevoValor) {
         try {
         let products = [];
-        if (fs.existsSync(path)) {
-            const data = await fs.promises.readFile(path, 'utf-8');
+        if (fs.existsSync(this.path)) {
+            const data = await fs.promises.readFile(this.path, 'utf-8');
             products = JSON.parse(data);
         }
     
@@ -76,7 +79,7 @@ export default class ProductsManager {
 
 
         console.log(`El producto con id ${id} ha sido actualizado`);
-        await writeFile(path, JSON.stringify(products), 'utf8');
+        await writeFile(this.path, JSON.stringify(products), 'utf8');
         } catch (error) {
         console.error(error);
         console.log( 'Ha ocurrido un error al actualizar el producto');
@@ -86,8 +89,8 @@ export default class ProductsManager {
     async deleteProduct(id) {
         try {
         let products = [];
-        if (fs.existsSync(path)) {
-            const data = await fs.promises.readFile(path, 'utf-8');
+        if (fs.existsSync(this.path)) {
+            const data = await fs.promises.readFile(this.path, 'utf-8');
             products = JSON.parse(data);
         }
     
@@ -100,7 +103,7 @@ export default class ProductsManager {
         products.splice(index, 1);
     
         console.log(`El producto con id ${id} ha sido eliminado`);
-        await writeFile(path, JSON.stringify(products), 'utf8');
+        await writeFile(this.path, JSON.stringify(products), 'utf8');
         } catch (error) {
         console.error(error);
         console.log('Ha ocurrido un error al eliminar el producto');

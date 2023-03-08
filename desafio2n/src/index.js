@@ -2,8 +2,8 @@ import ProductsManager from "./productManager.js";
 import Product from "./product.js";
 
 
-
-const manager = new ProductsManager();
+const path = "./files/productos.txt"
+const manager = new ProductsManager("./files/productos.txt");
 
 
 
